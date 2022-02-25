@@ -13,6 +13,15 @@ tags:
 <audio id="audio" controls="controls" preload="none">
   <source id="mp3" src="linchao01-40.mp3" >
 </audio>
+<button onclick="document.getElementById('audio').playbackRate = 1">
+  x1.0
+</button>
+<button onclick="document.getElementById('audio').playbackRate = 1.5">
+  x1.5
+</button>
+<button onclick="document.getElementById('audio').playbackRate = 2">
+  x2.0
+</button>
 
 # 开篇
 

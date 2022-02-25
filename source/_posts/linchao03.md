@@ -8,12 +8,20 @@ categories:
 date: 2022-02-20 22:38:23
 ---
 
-
 # 音频
 
-<audio id="audio" controls="controls" preload="none">
+<audio id="audio" controls="controls" preload="none" type="audio/mp3" playbackRate="1">
   <source id="mp3" src="linchao03-40.mp3" >
 </audio>
+<button onclick="document.getElementById('audio').playbackRate = 1">
+  x1.0
+</button>
+<button onclick="document.getElementById('audio').playbackRate = 1.5">
+  x1.5
+</button>
+<button onclick="document.getElementById('audio').playbackRate = 2">
+  x2.0
+</button>
 
 # 开篇
 
