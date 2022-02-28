@@ -1211,3 +1211,7 @@ _我们下节课再见_ 👋🏻
 [《调研专项：行业报告调研方法》](https://yitang.ethercap.com/lesson/KHqe5d4ab027eee1?_uds=hyyy_xktj_kczj)
 
 [《调研专项：读懂上市公司报告》](https://yitang.ethercap.com/lesson/AYzN60ddc7830aef?_uds=hyyy_xktj_kczj)
+
+# 课后 Candy
+
+[垂直领域圈子清单Cheatsheet](https://yitanger.feishu.cn/docs/doccncbe3tQvMLyrN4anuwzSbXg)

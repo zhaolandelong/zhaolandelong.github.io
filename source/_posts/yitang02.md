@@ -828,3 +828,6 @@ Truman跟我聊过，《预判市场红利》这个话题，也值得做成一�
 好啦，今天的课程就全部结束了，感谢大家的学习，期待在后面的课程里，我们再次相见！
 
 拜拜~~~~~
+
+# 课后 Candy
+[优秀创业思考合集](https://yitanger.feishu.cn/docs/doccneDpRCHUTUqzCokMMRLHvwc)
