@@ -127,6 +127,6 @@ deploy:
     github:
       url: https://github.com/zhaolandelong/zhaolandelong.github.io
       branch: gh-pages
-    # gitee:
-    #   url: https://gitee.com/zhaolandelong/zhaolandelong
-    #   branch: gh-pages
+    gitee:
+      url: https://gitee.com/zhaolandelong/zhaolandelong
+      branch: gh-pages
