@@ -1,0 +1,1708 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+    <!-- title -->
+
+
+    
+
+<!-- keywords -->
+
+
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <meta name="author" content="Dylan">
+    <meta name="renderer" content="webkit">
+    <meta name="copyright" content="Dylan">
+    
+        <meta name="keywords" content="hexo,hexo-theme,hexo-blog">
+    
+    <meta name="description" content="">
+    <meta name="description" content="音频        x0.75     x1.0     x1.5   个人总结复盘的价值把平时散落的信息、知识进行提炼总结，指导未来实践。资产沉淀、团队共识、认知迭代 &#x3D;&gt; 团队学习能力  复盘要实事求是，把事实还原到位 复盘可以提取出面向未来的知识，这是公司资产 复盘是团队成长的一把利器  好的复盘回顾完整 + 提炼发现 + 完整的因果链 + 假设推演。 基础明确复盘目标。复盘">
+<meta property="og:type" content="article">
+<meta property="og:title" content="【一堂】科学复盘：团队认知升级利器">
+<meta property="og:url" content="https://zhaolandelong.github.io/2022/03/14/yitang14/index.html">
+<meta property="og:site_name" content="Dylan 的博客">
+<meta property="og:description" content="音频        x0.75     x1.0     x1.5   个人总结复盘的价值把平时散落的信息、知识进行提炼总结，指导未来实践。资产沉淀、团队共识、认知迭代 &#x3D;&gt; 团队学习能力  复盘要实事求是，把事实还原到位 复盘可以提取出面向未来的知识，这是公司资产 复盘是团队成长的一把利器  好的复盘回顾完整 + 提炼发现 + 完整的因果链 + 假设推演。 基础明确复盘目标。复盘">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2022-03-14T03:54:09.000Z">
+<meta property="article:modified_time" content="2022-03-14T03:58:17.943Z">
+<meta property="article:author" content="Dylan">
+<meta property="article:tag" content="课程笔记">
+<meta property="article:tag" content="音频">
+<meta name="twitter:card" content="summary">
+    <meta http-equiv="Cache-control" content="no-cache">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <link rel="icon" href="/assets/favicon.ico">
+    
+    <title>【一堂】科学复盘：团队认知升级利器 · Dylan 的博客</title>
+    <!-- /*! loadCSS. [c]2017 Filament Group, Inc. MIT License */
+/* This file is meant as a standalone workflow for
+- testing support for link[rel=preload]
+- enabling async CSS loading in browsers that do not support rel=preload
+- applying rel preload css once loaded, whether supported or not.
+*/ -->
+<script>
+    (function (w) {
+        'use strict'
+        // rel=preload support test
+        if (!w.loadCSS) {
+            w.loadCSS = function () {}
+        }
+        // define on the loadCSS obj
+        var rp = (loadCSS.relpreload = {})
+        // rel=preload feature support test
+        // runs once and returns a function for compat purposes
+        rp.support = (function () {
+            var ret
+            try {
+                ret = w.document.createElement('link').relList.supports('preload')
+            } catch (e) {
+                ret = false
+            }
+            return function () {
+                return ret
+            }
+        })()
+
+        // if preload isn't supported, get an asynchronous load by using a non-matching media attribute
+        // then change that media back to its intended value on load
+        rp.bindMediaToggle = function (link) {
+            // remember existing media attr for ultimate state, or default to 'all'
+            var finalMedia = link.media || 'all'
+
+            function enableStylesheet() {
+                link.media = finalMedia
+            }
+
+            // bind load handlers to enable media
+            if (link.addEventListener) {
+                link.addEventListener('load', enableStylesheet)
+            } else if (link.attachEvent) {
+                link.attachEvent('onload', enableStylesheet)
+            }
+
+            // Set rel and non-applicable media type to start an async request
+            // note: timeout allows this to happen async to let rendering continue in IE
+            setTimeout(function () {
+                link.rel = 'stylesheet'
+                link.media = 'only x'
+            })
+            // also enable media after 3 seconds,
+            // which will catch very old browsers (android 2.x, old firefox) that don't support onload on link
+            setTimeout(enableStylesheet, 3000)
+        }
+
+        // loop through link elements in DOM
+        rp.poly = function () {
+            // double check this to prevent external calls from running
+            if (rp.support()) {
+                return
+            }
+            var links = w.document.getElementsByTagName('link')
+            for (var i = 0; i < links.length; i++) {
+                var link = links[i]
+                // qualify links to those with rel=preload and as=style attrs
+                if (
+                    link.rel === 'preload' &&
+                    link.getAttribute('as') === 'style' &&
+                    !link.getAttribute('data-loadcss')
+                ) {
+                    // prevent rerunning on link
+                    link.setAttribute('data-loadcss', true)
+                    // bind listeners to toggle media back
+                    rp.bindMediaToggle(link)
+                }
+            }
+        }
+
+        // if unsupported, run the polyfill
+        if (!rp.support()) {
+            // run once at least
+            rp.poly()
+
+            // rerun poly on an interval until onload
+            var run = w.setInterval(rp.poly, 500)
+            if (w.addEventListener) {
+                w.addEventListener('load', function () {
+                    rp.poly()
+                    w.clearInterval(run)
+                })
+            } else if (w.attachEvent) {
+                w.attachEvent('onload', function () {
+                    rp.poly()
+                    w.clearInterval(run)
+                })
+            }
+        }
+
+        // commonjs
+        if (typeof exports !== 'undefined') {
+            exports.loadCSS = loadCSS
+        } else {
+            w.loadCSS = loadCSS
+        }
+    })(typeof global !== 'undefined' ? global : this)
+</script>
+
+    <style type="text/css">
+    @font-face {
+        font-family: 'Oswald-Regular';
+        src: url("/font/Oswald-Regular.ttf");
+    }
+
+    body {
+        margin: 0;
+    }
+
+    header,
+    footer,
+    .back-top,
+    .sidebar,
+    .container,
+    .site-intro-meta,
+    .toc-wrapper {
+        display: none;
+    }
+
+    .site-intro {
+        position: relative;
+        z-index: 3;
+        width: 100%;
+        /* height: 50vh; */
+        overflow: hidden;
+    }
+
+    .site-intro-placeholder {
+        position: absolute;
+        z-index: -2;
+        top: 0;
+        left: 0;
+        width: calc(100% + 300px);
+        height: 100%;
+        background: repeating-linear-gradient(-45deg, #444 0, #444 80px, #333 80px, #333 160px);
+        background-position: center center;
+        transform: translate3d(-226px, 0, 0);
+        animation: gradient-move 2.5s ease-out 0s infinite;
+    }
+
+    @keyframes gradient-move {
+        0% {
+            transform: translate3d(-226px, 0, 0);
+        }
+        100% {
+            transform: translate3d(0, 0, 0);
+        }
+    }
+</style>
+
+    <link rel="preload" href="/css/style.css?v=20211217" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="/css/dark.css?v=20211217" as="style">
+    <link rel="stylesheet" href="/css/dark.css">
+    <link rel="stylesheet" href="/css/mobile.css?v=20211217" media="(max-width: 960px)">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" as="script">
+    <link rel="preload" href="/scripts/main.js?v=20211217" as="script">
+    <link rel="preload" href="/scripts/dark.js?v=20211217" as="script">
+    <link rel="preload" href="/font/Oswald-Regular.ttf" as="font" crossorigin>
+    <link rel="preload" href="https://at.alicdn.com/t/font_327081_1dta1rlogw17zaor.woff" as="font" crossorigin>
+    <!-- algolia -->
+    
+    <!-- 百度统计  -->
+    
+    <!-- 谷歌统计  -->
+    
+<meta name="generator" content="Hexo 6.0.0"><link rel="alternate" href="/atom.xml" title="Dylan 的博客" type="application/atom+xml">
+</head>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js"></script>
+    <script type="text/javascript">
+        if (typeof window.$ == undefined) {
+            console.warn('jquery load from jsdelivr failed, will load local script')
+            document.write('<script src="/lib/jquery.min.js" />')
+        }
+    </script>
+    
+        <body class="post-body">
+    
+        <!-- header -->
+        <header class="header header-mobile">
+    <!-- top read progress line -->
+    <div class="header-element">
+        <div class="read-progress"></div>
+    </div>
+    <!-- sidebar menu button -->
+    <div class="header-element">
+        
+            <div class="header-sidebar-menu">
+        
+            
+                <div style="padding-left: 1px;">&#xe775;</div>
+            
+        </div>
+    </div>
+    <!-- header actions -->
+    <div class="header-actions">
+        <!-- theme mode switch button -->
+        <span class="header-theme-btn header-element">
+            <i class="fas fa-adjust"></i>
+        </span>
+        <!-- back to home page text -->
+        <span class="home-link header-element">
+            <a href=/>欢迎来到 Dylan 的宝藏</a>
+        </span>
+    </div>
+    <!-- toggle banner for post layout -->
+    
+        
+            <div class="banner">
+        
+            <div class="blog-title header-element">
+                <a href="/">欢迎来到 Dylan 的宝藏</a>
+            </div>
+            <div class="post-title header-element">
+                <a href="#" class="post-name">【一堂】科学复盘：团队认知升级利器</a>
+            </div>
+        </div>
+    
+</header>
+
+        <!-- fixed footer -->
+        <footer class="footer-fixed">
+    <!-- back to top button -->
+    <div class="footer-fixed-element">
+        
+            <div class="back-top back-top-hidden">
+        
+        
+            <div>&#xe639;</div>
+        
+        </div>
+    </div>
+</footer>
+
+        <!-- wrapper -->
+        <div class="wrapper">
+            <div class="site-intro" style="
+
+
+
+
+
+
+
+    height:50vh;
+
+">
+    
+    <!-- 主页  -->
+    
+        
+    <!-- 404页  -->
+            
+    <div class="site-intro-placeholder"></div>
+    <div class="site-intro-img" style="background-image: url(/intro/post-bg.jpg)"></div>
+    <div class="site-intro-meta">
+        <!-- 标题  -->
+        <h1 class="intro-title">
+            <!-- 主页  -->
+            
+                【一堂】科学复盘：团队认知升级利器
+            <!-- 404 -->
+            
+        </h1>
+        <!-- 副标题 -->
+        <p class="intro-subtitle">
+            <!-- 主页副标题  -->
+            
+                
+            <!-- 404 -->
+            
+        </p>
+        <!-- 文章页 meta -->
+        
+            <div class="post-intros">
+                <!-- 文章页标签  -->
+                
+                    <div class= post-intro-tags >
+    
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="课程笔记">课程笔记</a>
+    
+        <a class="post-tag" href="javascript:void(0);" data-tags="音频">音频</a>
+    
+</div>
+
+                
+                
+                    <div class="post-intro-read">
+                        <span>字数统计: <span class="post-count word-count">16.3k</span>阅读时长: <span class="post-count reading-time">54 min</span></span>
+                    </div>
+                
+                <div class="post-intro-meta">
+                    <!-- 撰写日期 -->
+                    <span class="iconfont-archer post-intro-calander">&#xe676;</span>
+                    <span class="post-intro-time">2022/03/14</span>
+                    <!-- busuanzi -->
+                    
+                        <span id="busuanzi_container_page_pv" class="busuanzi-pv">
+                            <span class="iconfont-archer post-intro-busuanzi">&#xe602;</span>
+                            <span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    
+                    <!-- 文章分享 -->
+                    <span class="share-wrapper">
+                        <span class="iconfont-archer share-icon">&#xe71d;</span>
+                        <span class="share-text">Share</span>
+                        <ul class="share-list">
+                            <li class="iconfont-archer share-qr" data-type="qr">&#xe75b;
+                                <div class="share-qrcode"></div>
+                            </li>
+                            <li class="iconfont-archer" data-type="weibo">&#xe619;</li>
+                            <li class="iconfont-archer" data-type="qzone">&#xe62e;</li>
+                            <li class="iconfont-archer" data-type="twitter">&#xe634;</li>
+                            <li class="iconfont-archer" data-type="facebook">&#xe67a;</li>
+                        </ul>
+                    </span>
+                </div>
+            </div>
+        
+    </div>
+</div>
+
+            <script>
+  // get user agent
+  function getBrowserVersions() {
+    var u = window.navigator.userAgent
+    return {
+      userAgent: u,
+      trident: u.indexOf('Trident') > -1, //IE内核
+      presto: u.indexOf('Presto') > -1, //opera内核
+      webKit: u.indexOf('AppleWebKit') > -1, //苹果、谷歌内核
+      gecko: u.indexOf('Gecko') > -1 && u.indexOf('KHTML') == -1, //火狐内核
+      mobile: !!u.match(/AppleWebKit.*Mobile.*/), //是否为移动终端
+      ios: !!u.match(/\(i[^;]+;( U;)? CPU.+Mac OS X/), //ios终端
+      android: u.indexOf('Android') > -1 || u.indexOf('Linux') > -1, //android终端或者uc浏览器
+      iPhone: u.indexOf('iPhone') > -1 || u.indexOf('Mac') > -1, //是否为iPhone或者安卓QQ浏览器
+      iPad: u.indexOf('iPad') > -1, //是否为iPad
+      webApp: u.indexOf('Safari') == -1, //是否为web应用程序，没有头部与底部
+      weixin: u.indexOf('MicroMessenger') == -1, //是否为微信浏览器
+      uc: u.indexOf('UCBrowser') > -1, //是否为android下的UC浏览器
+    }
+  }
+  var browser = {
+    versions: getBrowserVersions(),
+  }
+  console.log('userAgent: ' + browser.versions.userAgent)
+
+  // callback
+  function fontLoaded() {
+    console.log('font loaded')
+    if (document.getElementsByClassName('site-intro-meta')) {
+      document
+        .getElementsByClassName('intro-title')[0]
+        .classList.add('intro-fade-in')
+      document
+        .getElementsByClassName('intro-subtitle')[0]
+        .classList.add('intro-fade-in')
+      var postIntros = document.getElementsByClassName('post-intros')[0]
+      if (postIntros) {
+        postIntros.classList.add('post-fade-in')
+      }
+    }
+  }
+
+  // UC不支持跨域，所以直接显示
+  function asyncCb() {
+    if (browser.versions.uc) {
+      console.log('UCBrowser')
+      fontLoaded()
+    } else {
+      WebFont.load({
+        custom: {
+          families: ['Oswald-Regular'],
+        },
+        loading: function () {
+          // 所有字体开始加载
+          // console.log('font loading');
+        },
+        active: function () {
+          // 所有字体已渲染
+          fontLoaded()
+        },
+        inactive: function () {
+          // 字体预加载失败，无效字体或浏览器不支持加载
+          console.log('inactive: timeout')
+          fontLoaded()
+        },
+        timeout: 5000, // Set the timeout to two seconds
+      })
+    }
+  }
+
+  function asyncErr() {
+    console.warn('script load from CDN failed, will load local script')
+  }
+
+  // load webfont-loader async, and add callback function
+  function async(u, cb, err) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0]
+    o.src = u
+    if (cb) {
+      o.addEventListener(
+        'load',
+        function (e) {
+          cb(null, e)
+        },
+        false
+      )
+    }
+    if (err) {
+      o.addEventListener(
+        'error',
+        function (e) {
+          err(null, e)
+        },
+        false
+      )
+    }
+    s.parentNode.insertBefore(o, s)
+  }
+
+  var asyncLoadWithFallBack = function (arr, success, reject) {
+    var currReject = function () {
+      reject()
+      arr.shift()
+      if (arr.length) async(arr[0], success, currReject)
+    }
+
+    async(arr[0], success, currReject)
+  }
+
+  asyncLoadWithFallBack(
+    [
+      'https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js',
+      'https://cdn.bootcss.com/webfont/1.6.28/webfontloader.js',
+      "/lib/webfontloader.min.js",
+    ],
+    asyncCb,
+    asyncErr
+  )
+</script>
+
+            <img class="loading" src="/assets/loading.svg" style="display: block; margin: 6rem auto 0 auto; width: 6rem; height: 6rem;" />
+            <div class="container container-unloaded">
+                <main class="main post-page">
+    <article class="article-entry">
+        <h1 id="音频"><a href="#音频" class="headerlink" title="音频"></a>音频</h1><audio id="audio" controls="controls" preload="none">
+  <source id="mp3" src="yitang14x15-40.mp3" >
+</audio>
+<button onclick="document.getElementById('audio').playbackRate = 0.75">
+  x0.75
+</button>
+<button onclick="document.getElementById('audio').playbackRate = 1">
+  x1.0
+</button>
+<button onclick="document.getElementById('audio').playbackRate = 1.5">
+  x1.5
+</button>
+
+<h1 id="个人总结"><a href="#个人总结" class="headerlink" title="个人总结"></a>个人总结</h1><h1 id="复盘的价值"><a href="#复盘的价值" class="headerlink" title="复盘的价值"></a>复盘的价值</h1><p>把平时散落的信息、知识进行提炼总结，指导未来实践。<br>资产沉淀、团队共识、认知迭代 &#x3D;&gt; 团队学习能力</p>
+<ol>
+<li>复盘要实事求是，把事实还原到位</li>
+<li>复盘可以提取出面向未来的知识，这是公司资产</li>
+<li>复盘是团队成长的一把利器</li>
+</ol>
+<h1 id="好的复盘"><a href="#好的复盘" class="headerlink" title="好的复盘"></a>好的复盘</h1><p>回顾完整 + 提炼发现 + 完整的因果链 + 假设推演。</p>
+<h2 id="基础"><a href="#基础" class="headerlink" title="基础"></a>基础</h2><p>明确复盘目标。复盘有成本，一个复盘装不了所有东西。</p>
+<h2 id="方式"><a href="#方式" class="headerlink" title="方式"></a>方式</h2><p>个人成长复盘适合用文档。什么时候用团队开会形式更好？</p>
+<ol>
+<li>需要高度协同</li>
+<li>复杂项目</li>
+<li>关键决策</li>
+<li>战略复盘</li>
+<li>管理者重视“共识”而不是简单的信息收集</li>
+</ol>
+<h2 id="角色"><a href="#角色" class="headerlink" title="角色"></a>角色</h2><table>
+<thead>
+<tr>
+<th></th>
+<th>发起人</th>
+<th>引导师</th>
+<th>参与人</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>职责</td>
+<td>定话题、定复盘整体目标</td>
+<td>维护复盘会秩序、通过提问引导对话、推进讨论流程</td>
+<td>提供信息、参与讨论、提出问题</td>
+</tr>
+<tr>
+<td>角色</td>
+<td>部门负责人、CEO、项目经理等主责人</td>
+<td>可以由发起人担任，也可以为第三方或者HR</td>
+<td>有围绕复盘主题的目标工作的相关方</td>
+</tr>
+<tr>
+<td>心态要求</td>
+<td>开放，相信成长，停止抱怨，自我改变</td>
+<td>打造安全、舒适场域；场外＋场内视角</td>
+<td>成长，开放，停止抱怨，自我改变，拔高视角</td>
+</tr>
+</tbody></table>
+<h2 id="收集"><a href="#收集" class="headerlink" title="收集"></a>收集</h2><ol>
+<li>业绩数据</li>
+<li>运营数据</li>
+<li>日报&#x2F;周报</li>
+<li>用户&#x2F;客户反馈</li>
+<li>用户&#x2F;客户行为</li>
+<li>供应商信息</li>
+<li>团队评价</li>
+<li>客户反馈</li>
+<li>项目文档</li>
+</ol>
+<h1 id="实操"><a href="#实操" class="headerlink" title="实操"></a>实操</h1><h2 id="成败认定"><a href="#成败认定" class="headerlink" title="成败认定"></a>成败认定</h2><h3 id="常见问题"><a href="#常见问题" class="headerlink" title="常见问题"></a>常见问题</h3><ol>
+<li>目标模糊，不量化</li>
+<li>没有差距</li>
+<li>没有对齐，对目标的认知不一致</li>
+</ol>
+<h3 id="目的-功能"><a href="#目的-功能" class="headerlink" title="目的 + 功能"></a>目的 + 功能</h3><p>明确目标差距，对齐层级目标​。</p>
+<h2 id="场景还原"><a href="#场景还原" class="headerlink" title="场景还原"></a>场景还原</h2><h3 id="常见问题-1"><a href="#常见问题-1" class="headerlink" title="常见问题"></a>常见问题</h3><ol>
+<li>事实丢失</li>
+<li>事实扭曲</li>
+<li>还原没重点</li>
+<li>事实和判断混合</li>
+<li>还原有情绪</li>
+</ol>
+<h3 id="目的-功能-1"><a href="#目的-功能-1" class="headerlink" title="目的 + 功能"></a>目的 + 功能</h3><p>对齐成员信息，还原所有事实。<br>选择阶段，不要过早陷入细节，优先关键决策还原。</p>
+<h4 id="关键决策还原"><a href="#关键决策还原" class="headerlink" title="关键决策还原"></a>关键决策还原</h4><p>背景，谁，基于什么目标，通过什么，收集了什么信息，制定了什么策略<br>常用模型：PEST、波特五力、SWOT……</p>
+<h4 id="执行过程还原"><a href="#执行过程还原" class="headerlink" title="执行过程还原"></a>执行过程还原</h4><p>谁，什么时间，在哪，做了什么，后来发生了什么<br>常用模型：工作 SOP、最佳实践、项目 Checklist、工作手册</p>
+<h2 id="得失分析"><a href="#得失分析" class="headerlink" title="得失分析"></a>得失分析</h2><h3 id="常见问题-2"><a href="#常见问题-2" class="headerlink" title="常见问题"></a>常见问题</h3><ol>
+<li>缺少关键发现</li>
+<li>缺少深入分析</li>
+<li>错误归因</li>
+<li>缺少影响因素排序</li>
+<li>没有复盘成功经验</li>
+<li>不敢推翻已有结论</li>
+</ol>
+<h3 id="目的-功能-2"><a href="#目的-功能-2" class="headerlink" title="目的 + 功能"></a>目的 + 功能</h3><p>找因果链、找关键假设、找最佳实践流程和 Checklist</p>
+<h2 id="总结提炼"><a href="#总结提炼" class="headerlink" title="总结提炼"></a>总结提炼</h2><h3 id="常见问题-3"><a href="#常见问题-3" class="headerlink" title="常见问题"></a>常见问题</h3><ol>
+<li>缺少提炼</li>
+<li>缺少共识</li>
+<li>缺少 TODO</li>
+<li>TODO 缺乏落地性</li>
+</ol>
+<h3 id="目的-功能-3"><a href="#目的-功能-3" class="headerlink" title="目的 + 功能"></a>目的 + 功能</h3><p>沉淀知识资产，明确后续行动</p>
+<h3 id="资产沉淀-8-种类型-Checklist"><a href="#资产沉淀-8-种类型-Checklist" class="headerlink" title="资产沉淀 8 种类型 Checklist"></a>资产沉淀 8 种类型 Checklist</h3><ol>
+<li>Sop</li>
+<li>Checklist</li>
+<li>流程文档</li>
+<li>话术清单</li>
+<li>工作手册</li>
+<li>XXX N 步法 </li>
+<li>XXX N 个原则</li>
+<li>XXX 思考框架</li>
+</ol>
+<h1 id="课后-Candy"><a href="#课后-Candy" class="headerlink" title="课后 Candy"></a>课后 Candy</h1><p><a target="_blank" rel="noopener" href="https://yitanger.feishu.cn/docs/doccnHj1DdHmQOVFPuwhemxj8Fb">《多行业复盘案例精选合集》</a></p>
+<h1 id="原文"><a href="#原文" class="headerlink" title="原文"></a>原文</h1><p>科学复盘：团队认知升级利器<br>热身：为什么讲这节课<br>Say Hi：自我介绍<br>李婧怡(Serina) - 前美团旗舰业务OD负责人 |</p>
+<p>曾就职于大型外资管理咨询公司Gallup，以第三方的视角帮助企业解决组织和人才发展的问题<br>也曾在大型互联网公司（美团）以项目一把手负责人的身份，直接操盘组织和人才发展项目<br>现在，自己创业，以CEO的身份决策公司的组织和人才发展策略。</p>
+<p>在组织发展、人才发展的问题上，有丰富的视角，系统的理解框架，以及可以落地的实操建议。</p>
+<p>分享：美团基本功</p>
+<p>基本功是一个”难而正确的“事情。它天然非常枯燥，琐碎，甚至让人绝望看不到效果。<br>但正是这一个个无聊的基本功，拉开了公司和公司的差距。</p>
+<p>在美团，兴哥非常重视基本功训练，包括大家熟知的写作、开会等。</p>
+<p>这几年，美团还提炼了内部试用版的《管理基本功》，复盘是美团第四大管理基本功。今天非常荣幸有机会跟大家做个分享。</p>
+<p>在正式开始前，想给大家打个预防针。<br>既然是基本功课程，它就不会　“好玩”　“热闹”　“谈笑风生”，它没有花式颠覆，也不会五颜六色。它有点平淡，有点枯燥，甚至有点“烧脑”。</p>
+<p>但是，管理是实践学科，它像健身一样需要时常训练。</p>
+<p>我今天就是大家的私教教练，给大家讲解健身动作的要领、标准。但是如果真的要一副好身体，需要自己的意识，以及持续的刻意练习。</p>
+<p>不再啰嗦～　进入正题。</p>
+<p>之前磨课的时候，Truman问过我一个问题。之前在美团学到的，有哪些是可以用在初创公司的？<br>假设驱动：体现在每一个业务决策，关键假设是什么，怎么去验证它，验证什么样的数据。<br>知识沉淀：至少每个月会做一次梳理，总结新的最佳实践，同时看看我们团队的认知新进展。<br>定期复盘：关键活动、关键节点会复盘。要挖到我们的决策逻辑，我们的隐藏假设，我们发现的因果关系。</p>
+<p>在美团，这样的工作方法，让我产生了“踏实”感。</p>
+<p>就是一个事情，我不仅经历了，我还知道为什么经历了，再发生时，我如何让过去这些经历为我所用。<br>它会让我有一种夯实感，事情不是发生了就发生了，而是对未来真正在产生影响。<br>同时，会发现自己脑子里的事情很清楚，知识点的归类，对事情的判断逻辑链条，都比较有条理，能归类。</p>
+<p>今天我试图带着大家通过“复盘”，把平时散落的信息、知识进行提炼总结，指导未来实践。</p>
+<p>　<br>快速带一下这2个例子。<br>案例1：<br>【人才流失】某上市公司，处于行业上升期的，机会大把，但是人员流失率严重。核心岗位人才流失70%，已经连续3年。内部换过3套解决方案，都没有成功挽留人才。眼睁睁的错过捞金赚钱的大好时机。为什么？</p>
+<p>案例2：<br>【趟不出新业务线】某创业公司，2018年获得天使轮融资1000万，2020年初获得融资1500万，公司共30人，开辟业务线6条，2021年CEO压力极大，钱烧的差不多了，但是几个业务线的团队没有趟出一条增长线。这几年没少拉着团队讨论业务，经常整个周末都在开会，为什么就是突破不了？</p>
+<p>类似的情况，大家有没有碰上？你当时怎么做的呢？</p>
+<p>我碰上的不少创业者，对复盘有懵懂的认识。但是，大多认知复盘是一个无关紧要的事，没意识到复盘可以帮助公司突破关键瓶颈。最终，一直在原地打圈圈，掉在坑里爬不出来。</p>
+<p>从个人成长来说，复盘能力强的人，普遍相对优秀。<br>做新业务是逐步拿认知的过程，不会做复盘的话，拿认知的速度会差很多。而公司和公司之间拼的，就是谁犯的错误更少。</p>
+<p>复盘虽然很重要，但是，一堂邀请我来讲这些课的原因，还是因为市面上的课对大家来说还是不友好：<br>课程：大家所熟知的一些公司，没有出过成熟的课<br>书籍：以联想的复盘体系为代表，里面的案例也都比较大<br>实践：各个公司自己演绎的，大家拿不到信息</p>
+<p>所以，今天也很高兴能跟大家讲一节适用于创业公司的复盘课。</p>
+<p>为了鼓励大家，送给大家两句话：</p>
+<p>在正式开始上课之前，先给大家留一道预热思考题，我已经提前让玖月帮我发给大家了，有些同学可能还没仔细看，没关系，我们现在认真过一下。</p>
+<p>也麻烦玖月班班帮我发到内测群和基础群，方便大家阅读。</p>
+<p>思考：预热思考题</p>
+<p>今天的预热思考题，是一个大的案例题，你可以思考下：<br>假如你的业务碰到了这个情况，你会用什么样的思考框架去复盘？怎么通过一个好的复盘快速拿到背后的认知？</p>
+<p>案例完整信息：<br>某连锁零售公司，之前已经开了3家店，原本的数据很不错。<br>为了拿融资，CEO比较激进地一些开了10家，预期营收2000万。把原来团队的一些管理者都派出去管理了。</p>
+<p>后来发现整个这个业务，团队上最先出了问题，新城市员工的离职率特别高，已经严重影响了业绩。所以这次复盘是以业绩为出发点， 看一下离职率和管理问题。</p>
+<p>这10家店，其中3家为原有城市新店，7家为新城市开店。</p>
+<p>开店情况：<br>原有城市新开门店运营较为顺利，按照计划进行。<br>新城市的门店开业后，新员工流失率极高，入职后１周离职人员占比达50％。单月流失率80％。<br>第三个月，CEO决定外派老员工去新城市进行门店管理，也没有改变局面。<br>６个月过去了，人员流失的情况没有好转，新城市的７家门店业绩惨淡。<br>原本3个月即可回本的门店，至今还难以覆盖人员和租金成本。</p>
+<p>大家注意：<br>这是真实项目：这是我真实辅导过的项目，这家公司确实已经做出了3家店，模型已经跑出来了。<br>案例为了教学做了很多处理：数据都是脱敏过的，失真的。为了教学方便，做了很多信息简化，大家重点关注复盘的思路而不是这个业务本身。</p>
+<p>希望你带着问题开始今天的学习，课程结束之后，可以重新思考一遍，能不能大幅提升你思考的结构。</p>
+<p>审美：什么是优质复盘</p>
+<p>复盘这么好，是所有的事都需要复盘吗？</p>
+<p>判断：什么时候需要复盘</p>
+<p>【互动🙋】哪些案例需要复盘？<br>一堂社群的日常运营<br>一堂试验新的运营策略<br>第一次做线下工作坊<br>第一次做晚餐会<br>第一次做线上磨课会<br>一堂每周五的直播课<br>一堂一年一度的线上马拉松<br>SAAS产品开发一个新功能结束<br>做消费品，直播使用新的销售策略<br>做一个官方ppt模板<br>FA帮助一个项目融资成功<br>阿里每年复盘战略会<br>完成一个对外交付的项目<br>消费品做完一次测品<br>做消费品，第一次打样<br>线下店完成一次选址<br>消费品合作一次主播<br>公司融资，见一个投资人<br>年度绩效回顾<br>重要客户没拿下来<br>半年时发现公司业绩没达成<br>办一次活动，活动不成功<br>内部核心人才流失严重<br>公司需要找新的增长点，一直失败</p>
+<p>——————<br>给大家我的答案啊。</p>
+<p>注意：不要局限在“复盘” 这个词。 一个会议如果呈现这些特质，也可能是一种“复盘”</p>
+<p>【互动🙋】这背后的逻辑是什么，怎么判断哪些重不重要？</p>
+<p>【重点💡】什么时候不需要复盘？<br>不需要重复做，eg，只做一次买卖，冬天屯白菜。<br>缺乏复用性，eg，FA帮助创业者融资，更依赖信息差。<br>确定性强，eg，Truman的重复直播 vs 新的老师讲直播课。<br>事情比较简单，eg，做一个小调研，发群公告。</p>
+<p>什么时候需要复盘？</p>
+<p>复盘成本比较低，价值比较大，复盘ROI比较高。<br>越是公司级的业务越需要复盘，它影响公司成败的、覆盖面广，项目一旦做不好，对公司的代价实在太高了，对齐思维模型很重要。</p>
+<p>需要复盘的任务&#x2F;项目&#x2F;事件的常见特点：<br>第一次做，且未来会重复做<br>未达预期，不成功的任务、项目、策略<br>与战略相关的重大决策，关键决策<br>探索性、创新性，需要摸着石头过河<br>获得重大突破、成功探索、超出预期的，有良好口碑的，需要提炼最佳实践，沉淀SOP的</p>
+<p>【互动🙋】大家觉得合理的复盘频率是什么样子的？</p>
+<p>————<br>【重点💡】复盘的频率是跟着业务的阶段发生变化的。<br>公司到某个阶段后，可以把复盘制度化。<br>eg美团做新业务的时候，早期的时候是一周一天，后期……</p>
+<p>复盘时间点：<br>小事及时复盘：任务&#x2F;活动结束后，花很短的时间再过一次整个过程，及时制定改进方案<br>大事阶段性复盘：在大项目的执行过程中，阶段性复盘。思考原定的目标、目标达成的阶段性成果，对目标方向、执行策略做调整<br>项目结束后全面复盘： 在项目或战略结束后，全面总结目标达成情况，对过程中哪些做的好，哪些做的不好，收获和经验教训进行全面分析，提炼认知和规律</p>
+<p>【互动🙋】有没有人做过复盘？举个手～你们的复盘做得怎么样？</p>
+<p>避坑：复盘常见错误</p>
+<p>在跟一堂一起做课时，我们发现，大家普遍都做得都不好。</p>
+<p>该复盘的时候没复盘，项目做完就做完了。</p>
+<p>这个实在太多了，大家可以回想一下自己的业务最近半年有没有过一次完整的复盘。<br>有意识，但是没做<br>完全没意识</p>
+<p>很多公司会有复盘意识，但是因为缺乏系统方法和流程。<br>所以呈现出来的偏形式化，比如会上说一下这个事，和正常开会没什么两样，员工会觉得浪费时间。<br>没有新增信息 （多维度、多主体、多层级、多视角）<br>没有准确信息（缺乏量化数据、主观包装的信息）<br>没有对事情产生共同认知（框架、方法、经验、最佳实践等）<br>没有理解决策逻辑</p>
+<p>举个例子：一个跨部门项目的复盘，通过各自撰写项目总结来复盘  VS  一群人通过会议完成复盘，再总结成文件。</p>
+<p>复盘重视氛围的融洽而不是建设性的思考。<br>习惯性赞扬，过于在乎人的感受　（eg：子敬校长之前提到过，很多公司喜欢开表彰会，氛围其热融融但没有什么用。）<br>以人为主体描述事件  VS  以事为载体梳理参与人 </p>
+<p>哈哈，分享下在美团的经历。</p>
+<p>举个例子：给大家讲讲我第一次在美团开年会是什么样，大家可以对比下跟其他公司的不同。</p>
+<p>过程失控，出现参与度低没人说话，或者怼人、吵架、互相指责等两个极端情况。<br>从事情转向人，偏离复盘的初衷和目的<br>老板借机批评下属，复盘会改批斗会<br>成长心态缺失，借机秋后算账，寻找替罪羊<br>害怕担责，害怕暴露问题<br>开放心态不足，或私下站队，互捧或者开脱</p>
+<p>提升：复盘段位图</p>
+<p>所以，好的复盘究竟什么样呢？<br>做得好和做得不好到底差多少。</p>
+<p>我先拿我之前做销售的例子，让大家感受一下。</p>
+<p>我在咨询公司时对自己的复盘：</p>
+<p>整体评价一下：<br>个人来看，我做的挺好的。销售冠军，年均销售额在行业内也是top。　团队来看，与期待业绩有较大差距，团队带的不行。</p>
+<p>实际情况分析<br>2016年开始带团队。第一年业绩达标，第二年开始业绩出现明显差距。2017年，公司调整了产品线的构成。对销售的专业能力降低了，从解决方案销售转为产品销售。</p>
+<p>分析自己的表现<br>个人层面：有较强成就驱动，学习速度快，执行力强，勤奋（一年300天出差，几乎不睡觉），愿意探索销售策略（关系＋专业＋实诚＋死缠烂打）<br>团队层面：提供很多培训（每月至少１次），手把手辅导（每个关键客户），充分信任，不断让团队试错</p>
+<p>总结提炼：<br>我的个体销售能力已经被证明，我可以卖企业服务解决方案类产品。可以大胆自信。<br>我有带销售团队的经验，团队培养意识清晰，可以调动团队积极性。以后要注意的是，当公司产品线发生变化时，销售选人的问题（旧产品与新产品所需要技能不同）<br>公司策略转型后，新的标准化产品对专业要求降低，就是纯销售，不能充分发挥我的综合实力。以后我尽量避免做这种类型产品的销售。</p>
+<p>【互动🙋】你们觉得这个复盘怎么样？</p>
+<p>整体评价下<br>从阶段性达成公司交给个人的销售目标来看，是成功的。但是从带销售团队达成业绩来看，是失败的。　从个人销售能力提升角度来看，也是失败的。</p>
+<p>实际情况分析<br>有行业的红利（地产高速发展红利、咨询市场在国内的认知红利）<br>公司的品牌+产品　（更多线索1周10个 VS 1周3个、轻产品VS重产品）<br>销售列出的潜在客户好多都是充数的，并不一定能转化。直到我离职，该问题并没有被解决。<br>丢单子的原因每次都不太一样，经常是上次犯错的这次关注了，但是漏掉了其他需要关注的。每次签单就像碰运气。</p>
+<p>分析自我表现<br>影响我的销售业绩的因子有：行业增速、公司产品竞争力、产品定价、公司获取线索能力、竞品策略、个人销售能力等多个因素影响。其中行业增速直接影响个人业绩增速（客户行业增速达30％，而竞对的客户行业增速10％）。个人业绩增速飞速提升并不等于个人销售能力飞速提升。　<br>我们的销售线索是同行的３倍，这是公司品牌带来的红利。但是我们的转化率并没有３倍于行业水平，说明我们的销售转化能力低于行业均值。而之所以业绩不错，是因为我们选对了行业。<br>销售管理中，发现pipeline管理的问题时，没有积极寻找最佳实践。进一步深挖，发现是我们就没理解过线索管理的价值。把线索管理当成周会的一个汇报抓手，工作总结。所以该问题一直没有被解决。<br>对于丢单原因，没有做系统的梳理和复盘，缺乏对影响成单的关键销售阶段、客户决策流程进行拆解。这个流程机制曾经想做，但是最终放弃了。归根结底，是因为整个公司的管理理念是相信人的主观能动性，而忽略流程机制。</p>
+<p>总结提炼<br>我对自己的销售能力认知存在偏差，不是我能力强，是公司品牌强，而且选对了赛道。我的销售成绩是因为我在风口上，自己也确实努力扑腾了。勤奋值得肯定，但是销售基本功缺失也是事实。（比如，没有系统销售团队的方法，从目标制定、拆解到线索管理，都很粗放）<br>我们当时整个销售团队的管理从意识、到方法、到机制流程都没有做好。但是因为在行业＋品牌红利的加持中，温水青蛙，并不自知。</p>
+<p>To Do<br>学习最佳实践，开始刻意练习成为一个优秀销售<br>考虑是否要找销售合伙人，加速寻找标杆客户<br>重视公司品牌、个人品牌的建设，为企业获客降低成本　</p>
+<p>开始：规范化、刻意的训练自己的销售动作<br>停止：不要不做任何准备就见客户，现场凭感觉聊<br>继续：对每一次客户访问进行记录和复盘。记录客户问的问题，用的话术和词语。持续更新销售卖点、BD话术。</p>
+<p>两次复盘的不同：<br>引入了新维度的信息：行业、公司品牌（纠正对自身销售能力认知的偏差）<br>客观原因、主观原因都要分析（不要妄自尊大，也不要妄自菲薄）<br>围绕人自嗨 VS 围绕事自省</p>
+<p>所以，回顾一下前面大家踩的坑，以及市面上上做得好的，我跟一堂一起提炼了复盘的六段位图。</p>
+<p>段位图 ：<br>只做事：缺意识<br>有简单回顾：缺关键发现<br>#只有基本回顾和简单总结<br>有基本发现：缺充分的事实还原<br>#回顾目标和基本事实+有关键发现（及格）<br>回顾完整+提炼发现：缺因果链分析<br>#充分回顾目标+充分还原事实+关键发现<br>有完整因果链：缺隐藏假设挖掘<br>有完整假设推演：优秀复盘，可指导行动</p>
+<p>所以，到底怎么做呢？我们继续往下。接下来，我们可以接近动作了，但是，真正实操之前，我们还需要对复盘进行一次分析。</p>
+<p>做准备：复盘前分析</p>
+<p>基础：明确复盘目标</p>
+<p>复盘是有成本的。</p>
+<p>你对复盘的目标想得越清楚，你的复盘质量会越高。</p>
+<p>复盘的目标，一般来说有两种：<br>战略&#x2F;经营&#x2F;决策，比如确认是否要调整方向，比如某个经营指标未达预期，比如某个补贴促销策略效果<br>管理&#x2F;能力提升：以学习为目的，出于管理目的的复盘。比如针对日常运营模块做能力迭代，比如超预期完成时的最佳实践提炼</p>
+<p>方式：明确复盘形式</p>
+<p>选择复盘的形式<br>*</p>
+<p>个人复盘和团队复盘的区别：<br>信息量差异，会导致归因不同<br>站在外面的视角，个人时很难达到上帝视角，团队时思路可以拓宽</p>
+<p>什么时候用团队开会的形式更好：<br>需要高度协同<br>复杂项目<br>关键决策<br>战略复盘<br>管理者重视“共识”而不是简单的信息收集</p>
+<p>团队复盘必须要开集体会么？<br>建议集体进行<br>复盘的价值：资产沉淀（集体资产）、团队共识、认知迭代　－＞团队学习能力</p>
+<p>前面其实提到过这点了，这里再简单强调下吧。<br>多人协作的复盘，如果只是一个人去思考，不是所有相关方去讨论，效果和质量会有很大的偏差。</p>
+<p>大家要尽量避免一个人去复盘高协同的事。</p>
+<p>复盘的角色<br>*</p>
+<p>这三个角色，在自己复盘的时候，都是你自己。在你自己带团队复盘的时候，那你就是发起人和引导师的角色。<br>如果你发现自己引导的效果不好，也可以找HR或第三方。</p>
+<p>团队：做好心态准备</p>
+<p>创始人要想清楚，要下决心，要提要求。</p>
+<p>大家要默认，团队的复盘质量就是差的。团队复盘质量的提升，往往来自于创始人的要求。</p>
+<p>很多时候，创始人为什么也不敢对大家提要求？<br>是因为你自己也没有想清楚到底要不要花这么大成本去做复盘这件事。</p>
+<p>你上完课，你已经意识到了哪些复盘对你是重要的，你就要敢于下决心，更重要的是敢于提要求。</p>
+<p>复盘的团队文化</p>
+<p>互联网的团队，文化普遍比较开放，大家追求就事论事，复盘就比较容易做起来。</p>
+<p>但如果有的团队文化对犯错的人比较严苛，有严格的考核，没有给大家一个犯错的空间，是会影响团队积极性的。</p>
+<p>收集：做好事实收集</p>
+<p>在开始开会之前，很重要的工作是提前把一些事实信息收集起来。</p>
+<p>很多公司其实在执行过程中已经丢了很多数据，但是如果及时复盘，在这个时候催一波数据，有些数据还能抢救得下来。</p>
+<p>那么都有哪些地方可以为我们提供事实呢？给大家一个检查清单，大家可以自行检查。</p>
+<p>材料收集检查清单Checklist<br>业绩数据<br>运营数据<br>日报&#x2F;周报<br>用户&#x2F;客户反馈<br>用户&#x2F;客户行为<br>供应商信息<br>团队评价<br>客户反馈<br>项目文档</p>
+<p>好，做好所有的会前分析，我们就可以真正动手复盘了。<br>再强调一下，今天我分享的这个四步法，是可以实现你团队的整体复盘、管理者为团队复盘、以及你自己的业务复盘的。</p>
+<p>大家跟上我的思路。</p>
+<p>实操：科学复盘四步法</p>
+<p>复盘四步法，总结一下其实是16个字。<br>成败认定：明确目标差距，对齐层级目标<br>场景还原：对齐成员信息，还原所有事实<br>得失分析：找到关键成功要素 or 执行框架<br>总结提炼：沉淀知识资产，明确后续行动</p>
+<p>大家还记得今天的预热思考题吗？接下来我也会带着大家一步步练一遍。</p>
+<p>预热思考题：<br>假如你的业务碰到了这个情况，你会用什么样的思考框架去复盘？怎么通过一个好的复盘快速拿到背后的认知？</p>
+<p>案例完整信息：<br>某连锁零售公司，之前已经开了3家店，原本的数据很不错。<br>为了拿融资，CEO比较激进地一些开了10家，预期营收2000万。把原来团队的一些管理者都派出去管理了。</p>
+<p>后来发现整个这个业务，团队上最先出了问题，新城市员工的离职率特别高，已经严重影响了业绩。所以这次复盘是以业绩为出发点， 看一下离职率和管理问题。</p>
+<p>这10家店，其中３家为原有城市新店，７家为新城市开店。</p>
+<p>开店情况：<br>原有城市新开门店运营较为顺利，按照计划进行。<br>新城市的门店开业后，新员工流失率极高，入职后１周离职人员占比达５０％。单月流失率８０％。<br>第三个月，CEO决定外派老员工去新城市进行门店管理，也没有改变局面。<br>６个月过去了，人员流失的情况没有好转，新城市的７家门店业绩惨淡。<br>原本３个月即可回本的门店，至今还难以覆盖人员和租金成本。</p>
+<p>大家注意：<br>这是真实项目：这是我真实辅导过的项目，这家公司确实已经做出了3家店，模型已经跑出来了。<br>案例为了教学做了很多处理：数据都是脱敏过的，失真的。为了教学方便，做了很多信息简化，大家重点关注复盘的思路而不是这个业务本身。</p>
+<p>第一步，成败认定</p>
+<p>开会前可以简单破冰。但是如果大家都是朝夕相处的团队，也不用注重形式。重点是澄清：<br>召集大家复盘的目的<br>复盘会的整体流程<br>复盘规则：实事求是，对事不对人</p>
+<p>进入第一个环节后：大家先说各自判断。<br>（如果开场担心放不开，可以采用一些小技巧，我后面会讲到）</p>
+<p>避坑：常见问题<br>目标模糊：目标描述模糊，没有量化标准<br>没有差距：没有体现目标与实际的差距<br>没有对齐：目标没有共识，每个人认知的目标不一致</p>
+<p>举例一<br>项目整体比较顺利，中间出了一些问题，但是很快就解决了。从项目完成度来看，算成功的</p>
+<p>举例二<br>项目成功的标准是按时上线，我们的实际达成情况是：时间拖延几天，但是依然在双方共识的时间表内完成了产品上线。 </p>
+<p>举例三<br>项目最初的成功标准是按时上线。<br>我们与客户计划用15人天完成整个项目。我们的实际达成情况是：在双方共识的时间表内完成了产品上线，但实际使用20人天。<br>从客户的视角看，这个项目如期按质量完成。<br>但是从我们内部视角看，人力成本和时间成本超过计划。 </p>
+<p>目的+功能：<br>明确目标差距，对齐层级目标</p>
+<p>方法：如何操作<br>复盘对象的目标：<br>如果复盘的是个任务，那就是这个任务的目标。<br>如果复盘的是项目，那就是项目的目标。<br>如果复盘的是战略，那就是战略的目标。</p>
+<p>通常目标有两类描述方式：<br>量化的值：转化率、销售额、客户满意度、参与人数等等<br>状态描述：完成竞争对手调研、践行使命愿景、撰写用户需求报告</p>
+<p>核心点在于：对比结果与目标之间的关系。<br>如果达成了目标，那么接下来的复盘核心点则围绕「经验萃取」展开；<br>如果未达目标，复盘的核心点则是「差距与改良」。</p>
+<p>工具：便利贴画布</p>
+<p>便利贴：这个项目&#x2F;任务&#x2F;策略的目标是什么？ 实际与目标的差距是什么？</p>
+<p>应用：怎么解题</p>
+<p>预热思考题<br>假如你的业务碰到了这个情况，你会用什么样的思考框架去复盘？怎么通过一个好的复盘快速拿到背后的认知？</p>
+<p>案例完整信息：<br>某连锁零售公司，之前已经开了3家店，原本的数据很不错。<br>为了拿融资，CEO比较激进地一些开了10家，预期营收2000万。把原来团队的一些管理者都派出去管理了。</p>
+<p>后来发现整个这个业务，团队上最先出了问题，新城市员工的离职率特别高，已经严重影响了业绩。所以这次复盘是以业绩为出发点， 看一下离职率和管理问题。</p>
+<p>这10家店，其中３家为原有城市新店，７家为新城市开店。</p>
+<p>开店情况：<br>原有城市新开门店运营较为顺利，按照计划进行。<br>新城市的门店开业后，新员工流失率极高，入职后１周离职人员占比达５０％。单月流失率８０％。<br>第三个月，CEO决定外派老员工去新城市进行门店管理，也没有改变局面。<br>６个月过去了，人员流失的情况没有好转，新城市的７家门店业绩惨淡。<br>原本３个月即可回本的门店，至今还难以覆盖人员和租金成本。</p>
+<p>大家注意：<br>这是真实项目：这是我真实辅导过的项目，这家公司确实已经做出了3家店，模型已经跑出来了。<br>案例为了教学做了很多处理：数据都是脱敏过的，失真的。为了教学方便，做了很多信息简化，大家重点关注复盘的思路而不是这个业务本身。</p>
+<p>【成败认定】：<br>回答１<br>失败。原本３个月即可回本，现在３个月仍然没有回本。</p>
+<p>回答２<br>失败。期待业绩为３个月内回本，１年内实现营收２０００万。现在３个月未回本，营收不及预期。　</p>
+<p>回答３<br>对于３家本城市新开门店是成功的，营收达到预期。对于７家新城市门店是失败的，营收不及预期。　</p>
+<p>回答４<br>目标是通过开１０家分店，在１年内获得营收２０００万。目前为期６个月，尚难以对１年后的业绩下定论。但项目营收目标存在较高无法完成的风险。<br>就前３个月来看，原有城市的３家新开门店营收达到预期，经营管理暂视为“成功”。<br>而７家新城市门店营收不及预期，３个月内未回本，经营管理暂视为“失败”。　</p>
+<p>点评：<br>目标是分层级的。目标的成败认定可以按照层级进行拆分，单独认定。<br>对于未达成目标的，需要描述差距，最好有量化的数值。<br>对于达成目标的，也要单独列出给与“成功”判断，引导后续进行最佳实践分析。　</p>
+<p>注意：在复盘时，成败认定是奠基石。但是并不意味着后面复盘过程不可以修改这一步的结论。随着更多的信息补充，出现过修改成败认定结论的情况。　</p>
+<p>第二步，场景还原</p>
+<p>避坑：常见问题<br>事实丢失：缺关键事件或者关键决策遗漏，对场景的记忆模糊，不能充分还原信息。<br>事实扭曲：不实事求是，扭曲事实（通常是因为害怕担责）<br>还原没重点：对于不重要的琐碎事件，进行过多的描述 （未直接引起问题、非关键事件or决策）<br>事实和判断混合：边描述，边下判断，引导给出结论<br>还原有情绪：语言描述中带有针某些个人存在指责、埋怨等情绪</p>
+<p>目的+功能：<br>对齐成员信息，还原所有事实。</p>
+<p>看当时的关键数据，对的错的是怎么来的，纯描述客观事实。</p>
+<p>方法：如何操作</p>
+<p>你需要根据复盘的目标，重点是看还原策略的制定，还是还原过程执行。</p>
+<p>【重点💡】两个都有价值，只是复盘的方向会不同。</p>
+<p>【重点💡】通常来说，在选择阶段，还原策略制定过程会比还原执行过程更重要一些。<br>大家容易犯的错是，在做选择阶段，执行细节的优化其实不那么重要，不要过早陷入细节。</p>
+<p>以预热思考题为例：<br>当出现多个复盘方向时，我们需要跟现场的复盘确认，先重点对哪个部分进行复盘。是重点梳理“放手一搏的战略”、还是提炼““原有城市３家新店为何能迅速盈利的成功”，还是“新城市的７家门店营收不达标”。<br>这次的题目已经明确，这次复盘的重点在于通过解决管理问题来提升业绩。</p>
+<p>还原通常有两种思路：<br>时间顺序还原： 什么时间、谁、干了什么<br>方案设计&#x2F;故事线还原：背景、目标、路径、资源</p>
+<p>战略决策还原时常用的模型：<br>P.E.S.T　<br>波特五力<br>S.W.O.T<br>……</p>
+<p>还原执行过程时常用的模型：<br>工作SOP<br>最佳实践<br>项目Checklist<br>工作手册</p>
+<p>【重点💡】复盘是为了说事还是说人。敢于大声说事，但是要避免对人的攻击。情绪调动起来后，大家容易互相指责。需要引导大家，对事沟通。</p>
+<p>例如：<br>时间表拖延了是因为A没有安排好工作量，按时工作。（还原中带情绪）<br>时间表拖延了3天。未及时完成的部分是XX功能。这部分的开发需要50小时。（讲事实）</p>
+<p>【重点💡】你通过提问的方式问情绪激动&#x2F;推脱责任的人。</p>
+<p>例如：<br>如果其他外界因素都是最理想的状态，自己可以怎么做哪些改变？<br>能看出来大家对这个问题非常不满。我们现在给这个事情打多少分？为了做到１０分，我们可以做哪些事情？</p>
+<p>做一个好的复盘，开场知道规则，保持好的心态来是非常重要的。</p>
+<p>即便大家已经知道了，过程还是做不到，怎么办呢？</p>
+<p>除了刚才提到的问题使用，还可以耐心地需要重复规则。</p>
+<p>应用：怎么解题</p>
+<p>预热思考题<br>假如你的业务碰到了这个情况，你会用什么样的思考框架去复盘？怎么通过一个好的复盘快速拿到背后的认知？</p>
+<p>案例完整信息：<br>某连锁零售公司，之前已经开了3家店，原本的数据很不错。<br>为了拿融资，CEO比较激进地一些开了10家，预期营收2000万。把原来团队的一些管理者都派出去管理了。</p>
+<p>后来发现整个这个业务，团队上最先出了问题，新城市员工的离职率特别高，已经严重影响了业绩。所以这次复盘是以业绩为出发点， 看一下离职率和管理问题。</p>
+<p>这10家店，其中３家为原有城市新店，７家为新城市开店。</p>
+<p>开店情况：<br>原有城市新开门店运营较为顺利，按照计划进行。<br>新城市的门店开业后，新员工流失率极高，入职后１周离职人员占比达５０％。单月流失率８０％。<br>第三个月，CEO决定外派老员工去新城市进行门店管理，也没有改变局面。<br>６个月过去了，人员流失的情况没有好转，新城市的７家门店业绩惨淡。<br>原本３个月即可回本的门店，至今还难以覆盖人员和租金成本。</p>
+<p>大家注意：<br>这是真实项目：这是我真实辅导过的项目，这家公司确实已经做出了3家店，模型已经跑出来了。<br>案例为了教学做了很多处理：数据都是脱敏过的，失真的。为了教学方便，做了很多信息简化，大家重点关注复盘的思路而不是这个业务本身。</p>
+<p>【场景还原】外派老员工的陈述</p>
+<p>关键事实：<br>培训的流程和基本情况<br>每个新员工收到录用通知后，都会通过短信收到入职培训的通知。<br>入职培训当天，区域经理会组织参与人在某家线下门店进行培训。培训为期２天，主要会讲….<br> 新员工入职培训经常拖堂，我们闭店（晚上８点）都没结束，晚上也不见他们吃饭。最近２期新人训，能完整参加新员工培训的人数占比才３０％。大部分参加第一天后，第二天就不来了。</p>
+<p> 加班状态<br>加班是常态，特别是周末。几乎从来都到１２点。平时本来周一到周五可以调休１天，现在业绩不好，店长都不让休息。<br>新来的小年轻们，心理承压能力有限，吃不了苦。</p>
+<p>门店所在位置是城市核心区，有较大的客流量。</p>
+<p>新店开业的促销活动引来较多客流。</p>
+<p>通过促销，门店吸引了第一波客人。但是由于业务能力不足，回放话术不到位，无法通过召回客人进行复购。</p>
+<p>点评：<br>场景还原应围绕“目标”进行。目标是营收，因此场景还原应围绕为何营收难以做上去进行。人员流失是营收未达成的导火索，也是CEO一开始最开心的问题，所以也是信息收集的关键。<br>对于不重要的细节，无需做深挖，可迅速跳过，仅记录重点数字和信息。（事实１）<br>主观情绪描述、自己臆想的描述，无需记录。（事实２最后一句话）<br>事实描述最好有数字支持。（事实３，门店流量具体多少；事实４，促销引来多少客流，与店员可以承载的客流差距等）<br>边描述边下判断。（事实５，我们收集了XX的促销客人信息。到店后３天安排回访。回访的话术目前每个人不一样。整体回访完成率１００％，成功邀约到访率不足５％）</p>
+<p>第三步，得失分析<br>基于事实重新做一次分析，是成是败，是不是关键动作数据是不是都有？</p>
+<p>这个过程里，需要：<br>不断追问，没有数据支撑的，很容易被否掉<br>不断激发新的新思考</p>
+<p>如果你对一个问题还没有答案，那说明你还没有了解足够的信息。</p>
+<p>信息够了，答案自然就出来了。</p>
+<p>避坑：常见问题<br>缺乏发现&#x2F;浅+未拆解深层原因+归因不准</p>
+<p>缺少关键发现：缺少关键发现，没有对复盘目标深挖新的认知<br>缺少深入分析：提炼现象后，未进行深入分析（５WHY）<br>错误归因：归因时缺少依据，或者没有引做交叉验证<br>缺少影响因素排序：分析拆解影响要素后，未做要素的排序和重要性判断<br>没有复盘成功经验：只对失败进行分析，不对成功进行总结<br>不敢推翻已有结论：对于之前的成败论证结论不敢再大胆推翻，重新验证<br>比如，用错北极星指标，目标的牵引方向有问题；沙龙－参与人数不看中途离场人数；Sａａｓ产品看销售额不看续费率）</p>
+<p>举例一<br>我们发现直播的第一轮销售就可以达到最好的效果，能实现５０％销售目标。【缺少深入分析】</p>
+<p>举例二<br>直播第一轮销售效果最好的原因可能有这么几个因素：在线人数、人群中老会员为主、老会员中XX％即将会员到期有较强的续费意愿、卖货金额历史新低、促销话术振奋人心。　【缺少对影响要素的进一步推演，判断重要性】</p>
+<p>举例三：<br>直播第一轮销售效果最好的原因可能有这么几个因素：在线人数、人群中老会员为主、老会员中XX％即将会员到期有较强的续费意愿、促进金额历史新低、促销话术振奋人心。如果下次直播时，参与人主要是新会员，直播第一轮销售效果还会是最好的么？<br>我们经过分析发现，本次活动因为是年度马拉松，人群都是死忠粉，且老会员为主，因此第一轮促销转化率中更多为老会员。<br>而新会员在后面轮次的转化则占比更高，需要较长时间做决策，可参考小课的转化率作为数据。<br>因此，会员的结构可能会对首轮销售效果产生直接影响。【较好的找到了第一轮销售效果的KSF，但是还可以再进一步，关注其他要素】</p>
+<p>举例四：<br>直播第一轮销售效果最好的原因可能有这么几个因素：在线人数、人群中老会员为主、老会员中XX％即将会员到期有较强的续费意愿、促进金额历史新低、促销话术振奋人心。<br>我们推演后发现会员结构可能会对首轮销售效果产生直接影响。<br>而本次活动中，促销的时机和文案设计也很精妙，我们总结为A..B…..<br>这个促销机制可以考虑在下次继续使用。</p>
+<p>目的+功能：<br>找到关键成功要素（KSF） or 执行框架<br>找因果链<br>找关键假设<br>找最佳实践流程和Checklist</p>
+<p>方法：如何操作<br>提炼发现+拆解原因+关键假设</p>
+<p>怎么提炼发现？<br>这些重要的发现，可以理解为“顺藤摸瓜”里面的那个“藤”。<br>比如说一堂911直播卖货，得先注意到第一轮销售额就占目标50%的这个事实。</p>
+<p>怎么才能有这些重要的发现呢？<br>一般可以围绕目标挖一下有哪些事实。<br>可以收集现场团队&#x2F;用户&#x2F;客户等的判断。</p>
+<p>注意：收集后可以先定性判断是否合理，再确认是否当成重要的发现。</p>
+<p>怎么拆解原因，找到关键假设<br>创业复盘，最重要是归因。怎么让大家复盘更有深度呢？</p>
+<p>给大家两个方法。<br>第一，靠好问题。</p>
+<p>给大家一组问题：<br>这两个因素是因果关系还是关联关系？<br>同一个事情的KSF中，哪个更重要？适用于所有条件么？<br>找隐藏假设：如果A不存在了，BCD还会引起E吗？&#x2F;这个事还会发生吗？<br>５个Why问到底</p>
+<p>第二，靠一些现有的工具和模型</p>
+<p>一堂已有模型参考：<br>调研OSCAR模型<br>行业预判模型<br>一堂五步法<br>四步需求分析法<br>单元模型6段位<br>增长五力模型<br>……</p>
+<p>应用：怎么解题</p>
+<p>预热思考题：<br>假如你的业务碰到了这个情况，你会用什么样的思考框架去复盘？怎么通过一个好的复盘快速拿到背后的认知？</p>
+<p>案例完整信息：<br>某连锁零售公司，之前已经开了3家店，原本的数据很不错。<br>为了拿融资，CEO比较激进地一些开了10家，预期营收2000万。把原来团队的一些管理者都派出去管理了。</p>
+<p>后来发现整个这个业务，团队上最先出了问题，新城市员工的离职率特别高，已经严重影响了业绩。所以这次复盘是以业绩为出发点， 看一下离职率和管理问题。</p>
+<p>这10家店，其中３家为原有城市新店，７家为新城市开店。</p>
+<p>开店情况：<br>原有城市新开门店运营较为顺利，按照计划进行。<br>新城市的门店开业后，新员工流失率极高，入职后１周离职人员占比达50％。单月流失率80％。<br>第三个月，CEO决定外派老员工去新城市进行门店管理，也没有改变局面。<br>６个月过去了，人员流失的情况没有好转，新城市的７家门店业绩惨淡。<br>原本３个月即可回本的门店，至今还难以覆盖人员和租金成本。</p>
+<p>大家注意：<br>这是真实项目：这是我真实辅导过的项目，这家公司确实已经做出了3家店，模型已经跑出来了。<br>案例为了教学做了很多处理：数据都是脱敏过的，失真的。为了教学方便，做了很多信息简化，大家重点关注复盘的思路而不是这个业务本身。</p>
+<p>关键事实：<br>关键事实：<br>培训的流程和基本情况<br>每个新员工收到录用通知后，都会通过短信收到入职培训的通知。<br>入职培训当天，区域经理会组织参与人在某家线下门店进行培训。培训为期２天，主要会讲….<br> 新员工入职培训经常拖堂，我们闭店（晚上８点）都没结束，晚上也不见他们吃饭。最近２期新人训，能完整参加新员工培训的人数占比才３０％。大部分参加第一天后，第二天就不来了。<br> 加班状态<br>加班是常态，特别是周末。几乎从来都到１２点。平时本来周一到周五可以调休１天，现在业绩不好，店长都不让休息。<br>新来的小年轻们，心理承压能力有限，吃不了苦。<br>门店所在位置是城市核心区，有较大的客流量。<br>新店开业的促销活动引来较多客流。<br>通过促销，门店吸引了第一波客人。但是由于业务能力不足，回放话术不到位，无法通过召回客人进行复购。</p>
+<p>【互动🙋】大家尝试分析一下，如果你们获取了这些信息后，会提炼出什么？</p>
+<p>——————<br>【得失分析】<br>回答一：我们的新人培训时间要减少，现在时间过长，直接吓跑新人。<br>回答二：我们的回访话术直接影响了客人到店复购。</p>
+<p>问问大家，这两个回答你觉得有什么问题么？</p>
+<p>回忆下这一步的关键是：缺乏发现&#x2F;浅+未拆解深层原因+归因不准</p>
+<p>正确的姿势：<br>回答一：我们的新人培训时间要减少，现在时间过长，直接吓跑新人。<br>追问：过去的新人培训时间也是这么长么？<br>回答：过去也经常拖堂</p>
+<p>追问：那之前新人参与完成２天培训的完课率是多少？<br>回答：大概７０－８０％</p>
+<p>追问：那是什么变了，使得新人现在上完１天的课就想走？（1W为什么过去没有出现流失率这么高）<br>回答：嗯……　我们换了内容。我们第一天过去会讲产品相关的知识。现在主要讲公司的使命、愿景、价值观。</p>
+<p>追问：使命、愿景、价值观是个很有感召力的话题，为什么新人会想走呢？（２W）<br>回答：因为我们的使命、愿景、价值观内容比较洗脑。而且入职培训的要求是，必须当天完整背下公司的发展历史＋使命、愿景、价值观。估计很多人就放弃了吧。</p>
+<p>追问：不愿意遵守公司规定的人，不付出努力的员工，如果放弃了，对公司有什么损失么？（３W，为什么这些人走了会影响到公司）<br>回答：倒是没有。只是我们这个阶段最重要的事情，是先有人干活，然后把业绩做上去。等以后有的是时间让大家背。</p>
+<p>追问：为什么现在需要先有人干活，以后再让大家背？（４W）<br>回答：公司目前需要快速发展，迅速培养新人干活。而我们过于强调企业文化会导致没人做业绩。入职培训的目标与公司目前发展阶段不吻合。</p>
+<p>追问：公司是不是还有一些其他的管理制度，是跟现阶段的业务节奏不吻合的？<br>回答：我想想．．．</p>
+<p>回答二：我们的回访话术直接影响了客人到店复购。<br>追问：一般影响复购的因素有什么？<br>回答：回访话术很重要。</p>
+<p>追问：还有其他的么？<br>回答：嗯，客户第一次在店里的体验也很重要。</p>
+<p>追问：还有么？<br>回答：客户的购买力也很重要。我们这次的促销活动把价格降的很低。但是客人复购是原价。　</p>
+<p>追问：还有么？<br>回答：我想不出来了。</p>
+<p>追问：回访话术、首次到店体验、客人购买力，这三个你觉得哪个直接影响了复购率？<br>回答：我觉得都很重要。<br>但是，客人购买力直接影响复购能力，首次到店体验直接影响我的回访邀约到店的成功率。<br>啊，我想起来了。我们的用户满意度数据显示，不愿意推荐我们给其他人的客户中，有８０％表示，他们排队等候久、无人提供服务、答非所问。<br>这还是我们自己店员的管理问题不到位，业务能力不足，人手不够导致。　</p>
+<p>追问：所以小结下，您认为目前影响到复购的几对因果关系分别是：<br>店内人手不足，新人业务能力不足，导致门店接客能力有限。<br>促销活动增加了门店流量，同时带来了具备购买力和不具备购买力的客户。<br>门店流量迅速增加，但是店内人手能力并未迅速增加，导致用户体验不佳。　<br>门店暂没有能力迅速识别哪些是未来有能力复购的客群，因此无法优先保证这群人的体验。　<br>有复购能力的客群，体验不好的情况下，不会再次购买。</p>
+<p>点评：<br>对表象问题进行深入分析<br>对影响要素进行拆解，找到基础的因果链条<br>随时引入新数据，对分析和推理进行校验<br>避免盲目归因</p>
+<p>第四步，总结提炼<br>把正确&#x2F;错误的假设，达成共识</p>
+<p>避坑：常见问题<br>缺少提炼：缺少提炼的共识<br>缺少共识：提炼的内容不是共识。<br>缺少todo：根本没有思考后续事项<br>todo缺乏落地性：任务项没有拆到人和时间，或者列了没有做</p>
+<p>举例一<br>我们今天的讨论非常充分。大家回去去完成　1，2，3。。。</p>
+<p>举例二<br>我们今天的讨论非常充分。我们达成了ABC三个共识。接下来要去完成１，２，３…</p>
+<p>举例三<br>我们今天的讨论非常充分。我们达成了ABC三个共识。<br>我们还有DEF三个事情待验证。<br>同时，我们都认可1要继续走，　２要停止，３是新增加的一个流程。</p>
+<p>举例四：<br>我们今天的讨论非常充分。我们达成了ABC三个共识。<br>我们还有DEF三个事情待验证，XX你来负责跟进。<br>同时，我们都认可1要继续走，　２要停止，３是新增加的一个流程。<br>这三个事情的负责人分别是XXX。</p>
+<p>目的+功能：<br>沉淀知识资产，明确后续行动</p>
+<p>方法：如何操作<br>写下共同认知+沉淀+todo</p>
+<p>未验证的&#x2F;新发现的问题，列到Todo里。<br>提炼模型提炼方法论，如何work，如何不work。</p>
+<p>总结提炼：<br>需要停下什么？<br>继续做什么？<br>新做什么</p>
+<p>资产沉淀8种类型Checklist<br>Sop<br>Checklist<br>流程文档<br>话术清单<br>工作手册<br>XXX N步法<br>XXX N个原则<br>XXX 思考框架</p>
+<p>应用：怎么解题</p>
+<p>假如你的业务碰到了这个情况，你会用什么样的思考框架去复盘？怎么通过一个好的复盘快速拿到背后的认知？</p>
+<p>案例完整信息：<br>某连锁零售公司，之前已经开了3家店，原本的数据很不错。<br>为了拿融资，CEO比较激进地一些开了10家，预期营收2000万。把原来团队的一些管理者都派出去管理了。</p>
+<p>后来发现整个这个业务，团队上最先出了问题，新城市员工的离职率特别高，已经严重影响了业绩。所以这次复盘是以业绩为出发点， 看一下离职率和管理问题。</p>
+<p>这10家店，其中３家为原有城市新店，７家为新城市开店。</p>
+<p>开店情况：<br>原有城市新开门店运营较为顺利，按照计划进行。<br>新城市的门店开业后，新员工流失率极高，入职后１周离职人员占比达５０％。单月流失率８０％。<br>第三个月，CEO决定外派老员工去新城市进行门店管理，也没有改变局面。<br>６个月过去了，人员流失的情况没有好转，新城市的７家门店业绩惨淡。<br>原本３个月即可回本的门店，至今还难以覆盖人员和租金成本。</p>
+<p>大家注意：<br>这是真实项目：这是我真实辅导过的项目，这家公司确实已经做出了3家店，模型已经跑出来了。<br>案例为了教学做了很多处理：数据都是脱敏过的，失真的。为了教学方便，做了很多信息简化，大家重点关注复盘的思路而不是这个业务本身。</p>
+<p>总结提炼<br>发现总结：<br>店内人手尚未招齐时，接客能力有限，不适宜进行打促销活动。<br>促销活动会同时带来具备购买力和不具备购买力的客户。<br>回访邀约成功中，影响最大的因子是客户拥有良好的首次购物体验。</p>
+<p>TO DO ：<br>Ａ负责新人培养　＆　入职培训内容调整<br>B负责促销方案如何针对精准客群优化设计　＆　配套的到店后特征／身份识别方法<br>C负责对竞品的客户体验地图进行调研，收集关键触点的服务最佳实践</p>
+<p>尚待探索：<br>原有城市内的３家门店为何可以迅速完成新人招聘、培养，并且快速出业绩。　<br>员工离职原因中，是否只有入职培训？是否还有其他更重要的原因？<br>促销方案是否需要进行调整，或者阶段性暂停？测算清楚价值和效果再继续。<br>新城市的地理环境、人口环境、竞争对手薪资＆用工理念等，对新城市品牌的雇主品牌的影响</p>
+<p>开始：<br>重视招人用人策略的务实属性，更注重员工可以卖货的能力和经验，快速创造业绩。<br>停止<br>排查目前的管理制度（周报日报、销售话术、回访内容、服务SOP、薪资激励等）是否存在不适用的情况，逐一排查eg. 新员工入职培养 重视文化培养\u003e技能培养<br>继续<br>持续招聘新员工，补齐用人缺口</p>
+<p> 整体工具：实操指南<br>科学复盘四步法画布</p>
+<p>为了让大家有一套拿走就能用的工具，给大家准备了画布。大家下次想复盘的时候，可以依次照着填下来。</p>
+<p>复盘引导问题清单<br>复盘做得好不好，跟怎么引导是很有关系的。<br>磨课的时候花匠特别担心大家不知道怎么引导出一场好的复盘，所以我也花了很多精力准备了这个复盘引导的问题清单。</p>
+<p>《复盘引导问题清单》<br>成败认定：<br>当初行动的意图或目的、初衷是什么?<br>事件&#x2F;行动想要达到的目标是什么?<br>事先设想要实现的关键结果&#x2F;衡量指标是什么?<br>实际结果是怎样的?<br>与目标相比，哪些地方做得好?哪些地方未达预期或有待改进?</p>
+<p>场景还原：<br>时间线：什么情况下发生了什么事儿？具体发生了什么事？谁参与了？<br>当时事情的背景是什么？事件有哪些经过？<br>当时决策的逻辑是什么？当时都参考了哪些信息？<br>这些结果是如何发生的?在什么情况下?发生了哪些事?<br>为了实现目标，我们采用的策略打法是什么?<br>我们计划怎么做?预先制订的计划是什么?实际结果是怎样的?<br>客户的反馈&#x2F;评价是什么？<br>竞争对手的反应是什么？<br>我们扑了多少资源，花了多少人力，花了多少钱？<br>在XX时间点，如果缺失什么信息，这个事情就无法推进？<br>得失分析：<br>我们发现了什么？哪些事情会引起什么发生变化？他们是因果关系还是关联关系？<br>假设A不存在了，BCD还会引起E吗？&#x2F;这个事还会发生吗？<br>对于亮点，主观原因有哪些?客观原因是什么?其中，真正起作用的关键成功因素是什么?<br>对于不足，主观原因有哪些?客观原因是什么?其中，最重要的根本原因是什么?<br>存在的前提条件是什么？有什么特殊要求么？<br>假设其他因素都是最好状态，我们自己还可以做点什么，能让事情做的更好？</p>
+<p>总结提炼：<br>需要停止做什么？<br>新做什么？<br>有哪些可以坚持或推广的做法?<br>我们可以从这个事件&#x2F;活动中学到什么?<br>有哪些做法待改进?<br>如果有人要进行同样的行动，我们会给他什么建议?<br>接下来我们该做些什么?<br>哪些是我们可直接行动的?哪些是其他层级才能处理的?是否要向上呈报?</p>
+<p>其他模板工具<br>复盘其实在市面上确实还有其他的版本。<br>第一套是磨课过程，教研组跟我分享的一网上流传出来的美团的版本，这套复盘框架一堂这一年在使用，优点在于能比较全面地把事情复盘一遍。<br>另外一套是联想的复盘模型，比较经典，也放出来给大家。</p>
+<p>鼓励大家多用课上的四步法来做复盘，但是大家也可以根据自己的业务情况选择其他工具。</p>
+<p>前提：高质量复盘前提<br>前期沙盘，后期复盘。</p>
+<p>前期沙盘，后期复盘<br>没有前面的假设、预期目标、计划，复盘容易扯皮。<br>存在大量前期目标不清晰，或者假设不清楚的。一般建议复盘时优先梳理，大家一开始是如何开始这个项目的，各自的期待和自己定的目标是什么<br>创新业务可以大胆假设，拍个数作为基准值。不怕错，怕没有摸瓜的“藤”</p>
+<p>参与人的心态，现场的引导<br>管理者要能管住嘴，多听，多引导<br>规则要反复强调，讨论事情，用事实、数据说话<br>必要的时候，采取匿名反馈意见再汇总的方式　（写小纸条、便利贴、角色扮演等）</p>
+<p>信息源的丰富程度<br>参与人角色<br>数据来源<br>信息视角和维度　（宏观经济、行业、竞争对手、客户数据等）</p>
+<p>我的建议：<br>刚开始做的时候，先不要执迷于每个环节都做到“完美”。</p>
+<p>做到以下几个就算成功：<br>完成全部４个阶段：运用工具中的Checklist进行信息收集和讨论<br>观察结论及TODO是否为“更好的做事”提供了方向，避免针对人<br>对于结论、TODO可以在参与人中达成共识</p>
+<p>升华：复盘的本质</p>
+<p>最后送给大家三句话。</p>
+<p>复盘要实事求是，把事实还原到位。</p>
+<p>复盘难的点是：要面对事实，挖掘底层的规律。</p>
+<p>【重点💡】我常说一句话，公司之间拼的是高管团队之间的学习能力。</p>
+<p>【重点💡】复盘是把碎片化的经验萃取成知识，它可以帮你提取出面向未来的知识。</p>
+<p>和很多同学交流的时候，才发现大家真的是拿着宝藏却不当回事，常常直接就丢掉。我真的非常惋惜，大家不珍惜做过的事儿。</p>
+<p>复盘是团队成长的一把利器。</p>
+<p>但是，我今天还想强调一点，复盘是能给团队带来成长的。<br>CEO们不是都很好奇如何快速提升一群人的能力么？ 先从复盘开始吧。</p>
+<p>复盘的核心并不是深究复盘本身的质量。我的问题够不够好，我们挖的是不是够深。No!<br>复盘是在把一个团队认知达成共识，并总结出来，体现在公司资产沉淀和团队成长，复盘深度和质量更多是体现的公司资产的数量和团队成长的速度。</p>
+<p>【重点💡】共识本身就很有价值的。</p>
+<p>最最后，</p>
+<p>敲黑板重点： 复盘是打造学习型组织的重要基本功（Truman马拉松大课）</p>
+<p>今天的课到这里讲完了，最后祝福一下大家：</p>
+<p>附录<br>live46表格 如果文稿里的表格大家看不清，可以点击左侧蓝字，查看原表格</p>
+
+    </article>
+    <!-- license -->
+    
+        <div class="license-wrapper">
+            <p>原文作者：<a href="https://zhaolandelong.github.io">Dylan</a>
+            <p>原文链接：<a href="https://zhaolandelong.github.io/2022/03/14/yitang14/">https://zhaolandelong.github.io/2022/03/14/yitang14/</a>
+            <p>发表日期：<a href="https://zhaolandelong.github.io/2022/03/14/yitang14/">March 14th 2022, 3:54:09 am</a>
+            <p>更新日期：<a href="https://zhaolandelong.github.io/2022/03/14/yitang14/">March 14th 2022, 3:58:17 am</a>
+            <p>版权声明：本文采用<a rel="license noopener" target="_blank" href="http://creativecommons.org/licenses/by-nc/4.0/">知识共享署名-非商业性使用 4.0 国际许可协议</a>进行许可</p>
+        </div>
+    
+    <!-- paginator -->
+    <ul class="post-paginator">
+        <li class="next">
+            
+                <div class="nextSlogan">Next Post</div>
+                <a href="/2022/03/14/yitang12/" title="【一堂】🎯 直播Live第60场 预判壁垒">
+                    <div class="nextTitle">【一堂】🎯 直播Live第60场 预判壁垒</div>
+                </a>
+            
+        </li>
+        <li class="previous">
+            
+                <div class="prevSlogan">Previous Post</div>
+                <a href="/2022/03/13/yitang08/" title="【一堂】方案选修：重新理解解决方案">
+                    <div class="prevTitle">【一堂】方案选修：重新理解解决方案</div>
+                </a>
+            
+        </li>
+    </ul>
+    <!-- comment -->
+    
+        <div class="post-comment">
+            <!-- 来必力 City 版安装代码 -->
+
+
+            
+
+            
+
+            
+
+            <!-- utteranc评论 -->
+
+
+            <!-- partial('_partial/comment/changyan') -->
+            <!--PC版-->
+
+
+            
+            
+
+            
+
+        </div>
+    
+    <!-- timeliness note -->
+    <!-- idea from: https://hexo.fluid-dev.com/posts/hexo-injector/#%E6%96%87%E7%AB%A0%E6%97%B6%E6%95%88%E6%80%A7%E6%8F%90%E7%A4%BA -->
+    
+    <!-- Mathjax -->
+    
+</main>
+
+                <!-- profile -->
+                
+            </div>
+            <footer class="footer footer-unloaded">
+    <!-- social  -->
+    
+        <div class="social">
+            
+    
+        
+            
+                <a href="mailto:zhaolandelong@163.com" class="iconfont-archer email" title=email ></a>
+            
+        
+    
+        
+            
+                <a href="https://github.com/zhaolandelong" class="iconfont-archer github" target="_blank" title=github></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+            
+                <a href="https://juejin.cn/user/2075528585544237" class="iconfont-archer juejin" target="_blank" title=juejin></a>
+            
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+
+        </div>
+    
+    <!-- powered by Hexo  -->
+    <div class="copyright">
+        <span id="hexo-power">Powered by <a href="https://hexo.io/" target="_blank">Hexo</a></span><span class="iconfont-archer power">&#xe635;</span><span id="theme-info">theme <a href="https://github.com/fi3ework/hexo-theme-archer" target="_blank">Archer</a></span>
+    </div>
+    <!-- website approve for Chinese user -->
+    
+    <!-- 不蒜子  -->
+    
+        <div class="busuanzi-container">
+            
+             
+                <span id="busuanzi_container_site_pv">PV: <span id="busuanzi_value_site_pv"></span> :)</span>
+            
+        </div>
+    	
+</footer>
+
+        </div>
+        <!-- toc -->
+        
+            <div class="toc-wrapper toc-wrapper-loding" style=
+
+
+
+
+
+
+
+    top:50vh;
+
+>
+                <div class="toc-catalog">
+                    <span class="iconfont-archer catalog-icon">&#xe613;</span><span>CATALOG</span>
+                </div>
+                <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#%E9%9F%B3%E9%A2%91"><span class="toc-number">1.</span> <span class="toc-text">音频</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E4%B8%AA%E4%BA%BA%E6%80%BB%E7%BB%93"><span class="toc-number">2.</span> <span class="toc-text">个人总结</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A4%8D%E7%9B%98%E7%9A%84%E4%BB%B7%E5%80%BC"><span class="toc-number">3.</span> <span class="toc-text">复盘的价值</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%A5%BD%E7%9A%84%E5%A4%8D%E7%9B%98"><span class="toc-number">4.</span> <span class="toc-text">好的复盘</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9F%BA%E7%A1%80"><span class="toc-number">4.1.</span> <span class="toc-text">基础</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%96%B9%E5%BC%8F"><span class="toc-number">4.2.</span> <span class="toc-text">方式</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%A7%92%E8%89%B2"><span class="toc-number">4.3.</span> <span class="toc-text">角色</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%94%B6%E9%9B%86"><span class="toc-number">4.4.</span> <span class="toc-text">收集</span></a></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%AE%9E%E6%93%8D"><span class="toc-number">5.</span> <span class="toc-text">实操</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%88%90%E8%B4%A5%E8%AE%A4%E5%AE%9A"><span class="toc-number">5.1.</span> <span class="toc-text">成败认定</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98"><span class="toc-number">5.1.1.</span> <span class="toc-text">常见问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E7%9A%84-%E5%8A%9F%E8%83%BD"><span class="toc-number">5.1.2.</span> <span class="toc-text">目的 + 功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%9C%BA%E6%99%AF%E8%BF%98%E5%8E%9F"><span class="toc-number">5.2.</span> <span class="toc-text">场景还原</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98-1"><span class="toc-number">5.2.1.</span> <span class="toc-text">常见问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E7%9A%84-%E5%8A%9F%E8%83%BD-1"><span class="toc-number">5.2.2.</span> <span class="toc-text">目的 + 功能</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#%E5%85%B3%E9%94%AE%E5%86%B3%E7%AD%96%E8%BF%98%E5%8E%9F"><span class="toc-number">5.2.2.1.</span> <span class="toc-text">关键决策还原</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#%E6%89%A7%E8%A1%8C%E8%BF%87%E7%A8%8B%E8%BF%98%E5%8E%9F"><span class="toc-number">5.2.2.2.</span> <span class="toc-text">执行过程还原</span></a></li></ol></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%BE%97%E5%A4%B1%E5%88%86%E6%9E%90"><span class="toc-number">5.3.</span> <span class="toc-text">得失分析</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98-2"><span class="toc-number">5.3.1.</span> <span class="toc-text">常见问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E7%9A%84-%E5%8A%9F%E8%83%BD-2"><span class="toc-number">5.3.2.</span> <span class="toc-text">目的 + 功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%80%BB%E7%BB%93%E6%8F%90%E7%82%BC"><span class="toc-number">5.4.</span> <span class="toc-text">总结提炼</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98-3"><span class="toc-number">5.4.1.</span> <span class="toc-text">常见问题</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E7%9B%AE%E7%9A%84-%E5%8A%9F%E8%83%BD-3"><span class="toc-number">5.4.2.</span> <span class="toc-text">目的 + 功能</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#%E8%B5%84%E4%BA%A7%E6%B2%89%E6%B7%80-8-%E7%A7%8D%E7%B1%BB%E5%9E%8B-Checklist"><span class="toc-number">5.4.3.</span> <span class="toc-text">资产沉淀 8 种类型 Checklist</span></a></li></ol></li></ol></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E8%AF%BE%E5%90%8E-Candy"><span class="toc-number">6.</span> <span class="toc-text">课后 Candy</span></a></li><li class="toc-item toc-level-1"><a class="toc-link" href="#%E5%8E%9F%E6%96%87"><span class="toc-number">7.</span> <span class="toc-text">原文</span></a></li></ol>
+            </div>
+        
+        <!-- sidebar -->
+        <div class="sidebar sidebar-hide">
+    <ul class="sidebar-tabs sidebar-tabs-active-0">
+        <li class="sidebar-tab-archives"><span class="iconfont-archer">&#xe67d;</span><span class="tab-name">Archive</span></li>
+        <li class="sidebar-tab-tags"><span class="iconfont-archer">&#xe61b;</span><span class="tab-name">Tag</span></li>
+        <li class="sidebar-tab-categories"><span class="iconfont-archer">&#xe666;</span><span class="tab-name">Cate</span></li>
+    </ul>
+    <div class="sidebar-content sidebar-content-show-archive">
+        <div class="sidebar-panel-archives">
+    <!-- 在 ejs 中将 archive 按照时间排序 -->
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+    
+    
+    
+    <div class="total-and-search">
+        <div class="total-archive">
+        Total : 29
+        </div>
+        <!-- search  -->
+        
+    </div>
+    
+    <div class="post-archive">
+    
+        
+            
+            
+            <div class="archive-year"> 2022 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/14</span>
+            <a class="archive-post-title" href="/2022/03/14/yitang14/">【一堂】科学复盘：团队认知升级利器</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/14</span>
+            <a class="archive-post-title" href="/2022/03/14/yitang12/">【一堂】🎯 直播Live第60场 预判壁垒</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/14</span>
+            <a class="archive-post-title" href="/2022/03/13/yitang08/">【一堂】方案选修：重新理解解决方案</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/14</span>
+            <a class="archive-post-title" href="/2022/03/13/dedicated-children/">【摘抄】育儿百科</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/09</span>
+            <a class="archive-post-title" href="/2022/03/09/yitang07/">【一堂】调研选修：重新理解情报调研</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/09</span>
+            <a class="archive-post-title" href="/2022/03/08/yitang10/">【一堂】精益案例：我的3个新业务实验</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/08</span>
+            <a class="archive-post-title" href="/2022/03/08/yitang13/">【一堂】融资选修：重新理解「融资拿钱」</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/06</span>
+            <a class="archive-post-title" href="/2022/03/06/yitang11/">【一堂】股权选修：重新理解「合伙股权」</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/05</span>
+            <a class="archive-post-title" href="/2022/03/04/yitang09/">【一堂】重新理解「创业学习」（课程版）</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">03/01</span>
+            <a class="archive-post-title" href="/2022/02/28/yitang06/">【一堂】素质选修：重新理解务实创业</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/28</span>
+            <a class="archive-post-title" href="/2022/02/28/yitang00/">【一堂】入学礼包🎁：创业者技能树</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/27</span>
+            <a class="archive-post-title" href="/2022/02/26/yitang04/">【一堂】预判选修：如何预判创业可行性</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/27</span>
+            <a class="archive-post-title" href="/2022/02/26/yitang05/">【一堂】奖励课：靠专家访谈拿高价值信息</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/27</span>
+            <a class="archive-post-title" href="/2022/02/26/yitang03/">【一堂】精益选修：重新理解低成本创业</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/26</span>
+            <a class="archive-post-title" href="/2022/02/26/yitang02/">【一堂】重磅案例课：小龙虾外卖</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/26</span>
+            <a class="archive-post-title" href="/2022/02/26/yitang01/">【一堂】必修课：重新理解"创业里程碑"（91期）</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/21</span>
+            <a class="archive-post-title" href="/2022/02/20/linchao03/">【所长林超】学科03：工程论重要模型</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/20</span>
+            <a class="archive-post-title" href="/2022/02/19/linchao01/">【所长林超】学科01：熵与热力学重要模型</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/20</span>
+            <a class="archive-post-title" href="/2022/02/19/maoxuan/">【摘抄】《读懂<毛选>的人有多通透（全文高能）》</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/20</span>
+            <a class="archive-post-title" href="/2022/02/19/zhangyiming-weibo/">【摘抄】《张一鸣：牛逼的人找方法，傻逼的人找借口》</a>
+        </li>
+    
+        
+            
+            
+                
+                </ul>
+            
+            <div class="archive-year"> 2021 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/22</span>
+            <a class="archive-post-title" href="/2021/09/21/DiDongSheng007/">《人民币汇率与人民币国际化》实操课——翟东升</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/21</span>
+            <a class="archive-post-title" href="/2021/09/20/DiDongSheng006/">《人民币汇率与人民币国际化》第六讲——翟东升</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/20</span>
+            <a class="archive-post-title" href="/2021/09/19/DiDongSheng005/">《人民币汇率与人民币国际化》第五讲——翟东升</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/08</span>
+            <a class="archive-post-title" href="/2021/09/07/DiDongSheng004/">《人民币汇率与人民币国际化》第四讲——翟东升</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/06</span>
+            <a class="archive-post-title" href="/2021/09/05/DiDongSheng003/">《人民币汇率与人民币国际化》第三讲——翟东升</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/05</span>
+            <a class="archive-post-title" href="/2021/09/04/DiDongSheng002/">《人民币汇率与人民币国际化》第二讲——翟东升</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">09/03</span>
+            <a class="archive-post-title" href="/2021/09/02/DiDongSheng001/">《人民币汇率与人民币国际化》第一讲——翟东升</a>
+        </li>
+    
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">02/09</span>
+            <a class="archive-post-title" href="/2021/02/08/Child-growth/">牛娃成长规划</a>
+        </li>
+    
+        
+            
+            
+                
+                </ul>
+            
+            <div class="archive-year"> 2020 </div>
+            <ul class="year-list">
+            
+        
+        <li class="archive-post-item">
+            <span class="archive-post-date">06/27</span>
+            <a class="archive-post-title" href="/2020/06/26/Interview-experience/">某头条大牛的面试心得</a>
+        </li>
+    
+    </div>
+</div>
+
+        <div class="sidebar-panel-tags">
+    <div class="sidebar-tags-name">
+        
+            <span class="sidebar-tag-name" data-tags="课程笔记">
+                <span class="iconfont-archer">&#xe606;</span>
+                课程笔记
+            </span>
+        
+            <span class="sidebar-tag-name" data-tags="音频">
+                <span class="iconfont-archer">&#xe606;</span>
+                音频
+            </span>
+        
+    </div>
+    <div class="iconfont-archer sidebar-tags-empty">&#xe678;</div>
+    <div class="tag-load-fail" style="display: none; color: #ccc; font-size: 0.6rem;">
+        缺失模块，请参考主题文档进行安装配置：https://github.com/fi3ework/hexo-theme-archer#%E5%AE%89%E8%A3%85%E4%B8%BB%E9%A2%98
+    </div> 
+    <div class="sidebar-tags-list"></div>
+</div>
+
+        <div class="sidebar-panel-categories">
+    <div class="sidebar-categories-name">
+    
+        <span class="sidebar-category-name" data-categories="林超：给年轻人的跨学科通识课">
+            <span class="iconfont-archer">&#xe60a;</span>
+            林超：给年轻人的跨学科通识课
+        </span>
+    
+        <span class="sidebar-category-name" data-categories="一堂">
+            <span class="iconfont-archer">&#xe60a;</span>
+            一堂
+        </span>
+    
+        <span class="sidebar-category-name" data-categories="《人民币汇率与人民币国际化》">
+            <span class="iconfont-archer">&#xe60a;</span>
+            《人民币汇率与人民币国际化》
+        </span>
+    
+    </div>
+    <div class="iconfont-archer sidebar-categories-empty">&#xe678;</div>
+    <div class="sidebar-categories-list"></div>
+</div>
+
+    </div>
+</div>
+
+        <!-- site-meta -->
+        <script>
+    var siteMetaRoot = "/"
+    if (siteMetaRoot === "undefined") {
+        siteMetaRoot = '/'
+    }
+    var siteMeta = {
+        url: "https://zhaolandelong.github.io",
+        root: siteMetaRoot,
+        author: "Dylan"
+    }
+</script>
+
+        <!-- import experimental options here -->
+        <!-- Custom Font -->
+
+
+        <!-- main func -->
+        <script src="/scripts/main.js?v=20211217"></script>
+        <!-- dark mode -->
+        <script src="/scripts/dark.js?v=20211217"></script>
+        <!-- fancybox -->
+        <script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js" defer></script>
+        <!-- algolia -->
+        
+        <!-- busuanzi -->
+        
+            <script src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" async></script>
+        
+        <!-- CNZZ -->
+        
+        <!-- async load share.js -->
+        
+            <script src="/scripts/share.js?v=20211217" async></script>
+        
+        <!-- mermaid -->
+        
+    </body>
+</html>
