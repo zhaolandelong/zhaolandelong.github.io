@@ -1,11 +1,13 @@
 ---
-title: 【一堂】🎯 直播Live第60场 预判壁垒
+title: "【一堂】\U0001F3AF 直播Live第60场 预判壁垒"
 tags:
   - 课程笔记
   - 音频
 categories:
   - 一堂
+date: 2022-03-14 11:57:07
 ---
+
 
 
 # 音频
@@ -22,6 +24,14 @@ categories:
 <button onclick="document.getElementById('audio').playbackRate = 1.5">
   x1.5
 </button>
+
+# 课后 Candy
+开放到 2022年5月10号
+[Live60 预判壁垒 candy 合集](https://yitanger.feishu.cn/docs/doccnVq9XFOcp7Sl2268fz1NAZe)
+
+
+
+# 原文
 
 开场前准备4件事💡：
 安排好时间，确保9-11可以深度思考，少被打扰。
